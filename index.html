@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -36,6 +37,11 @@
    img.qrcode {
      width: 200px;
    }
+   .logo {
+     display: block;
+     margin: 0 auto 2em auto;
+     max-width: 250px;
+   }
    .feedback {
      margin-top: 3em;
      padding-top: 1em;
@@ -63,6 +69,7 @@
 </head>
 <body>
  <div class="box">
+   <img class="logo" src="52A5F48E-EE67-455D-8B27-03151769A233.png" alt="Aichmayr-Metrik Logo">
    <h1>Aichmayr Framework</h1>
    <p>Willkommen auf der offiziellen Seite der Aichmayr-Metrik, des φ(t,r)-Feldes und der UAKi-Weltformel.</p>
 
@@ -87,9 +94,11 @@
    <div class="feedback">
      <h2>Feedback</h2>
      <p>Was denkst du über das Aichmayr-Framework?</p>
-     <textarea placeholder="Schreibe hier dein Feedback..."></textarea>
-     <br>
-     <button onclick="alert('Danke für dein Feedback! (Dieses Formular speichert noch nichts)')">Absenden</button>
+     <form action="https://formspree.io/f/xeogwnnz" method="POST">
+       <textarea name="message" placeholder="Schreibe hier dein Feedback..."></textarea>
+       <br>
+       <button type="submit">Absenden</button>
+     </form>
    </div>
  </div>
 </body>

@@ -1,65 +1,96 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aichmayr Framework</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2em;
-      background-color: #f9f9f9;
-      color: #222;
-    }
-    h1 {
-      color: #333;
-    }
-    .box {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 800px;
-      margin: auto;
-    }
-    a {
-      color: #0057e7;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .qr {
-      text-align: center;
-      margin-top: 2em;
-    }
-    img.qrcode {
-      width: 200px;
-    }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Aichmayr Framework</title>
+ <style>
+   body {
+     font-family: Arial, sans-serif;
+     margin: 2em;
+     background-color: #f9f9f9;
+     color: #222;
+   }
+   h1 {
+     color: #333;
+   }
+   .box {
+     background: white;
+     border-radius: 8px;
+     padding: 20px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+     max-width: 800px;
+     margin: auto;
+   }
+   a {
+     color: #0057e7;
+     text-decoration: none;
+   }
+   a:hover {
+     text-decoration: underline;
+   }
+   .qr {
+     text-align: center;
+     margin-top: 2em;
+   }
+   img.qrcode {
+     width: 200px;
+   }
+   .feedback {
+     margin-top: 3em;
+     padding-top: 1em;
+     border-top: 1px solid #ccc;
+   }
+   textarea {
+     width: 100%;
+     height: 100px;
+     padding: 10px;
+     margin-top: 5px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     resize: vertical;
+   }
+   button {
+     margin-top: 10px;
+     padding: 10px 20px;
+     background-color: #0057e7;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+   }
+ </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Aichmayr Framework</h1>
-    <p>Willkommen auf der offiziellen Seite der Aichmayr-Metrik, des φ(t,r)-Feldes und der UAKi-Weltformel.</p>
+ <div class="box">
+   <h1>Aichmayr Framework</h1>
+   <p>Willkommen auf der offiziellen Seite der Aichmayr-Metrik, des φ(t,r)-Feldes und der UAKi-Weltformel.</p>
 
-    <h2>Wichtige Veröffentlichungen</h2>
-    <ul>
-      <li><a href="https://doi.org/10.5281/zenodo.15494943">The Aichmayr Framework (2025)</a></li>
-      <li><a href="https://doi.org/10.5281/zenodo.15284064">Structured Spacetime Response (2025)</a></li>
-      <li><a href="https://doi.org/10.5281/zenodo.15393629">Das Ende der Singularität</a></li>
-    </ul>
+   <h2>Wichtige Veröffentlichungen</h2>
+   <ul>
+     <li><a href="https://doi.org/10.5281/zenodo.15494943">The Aichmayr Framework (2025)</a></li>
+     <li><a href="https://doi.org/10.5281/zenodo.15284064">Structured Spacetime Response (2025)</a></li>
+     <li><a href="https://doi.org/10.5281/zenodo.15393629">Das Ende der Singularität</a></li>
+   </ul>
 
-    <h2>Downloads</h2>
-    <ul>
-      <li><a href="https://chat.openai.com/sandbox:/mnt/data/aichmayr_qr_cards_8per_sheet.pdf">QR-Karten (8x A4)</a></li>
-      <li><a href="https://chat.openai.com/sandbox:/mnt/data/aichmayr_framework_qr.png">Einzel-QR-Code</a></li>
-    </ul>
+   <h2>Downloads</h2>
+   <ul>
+     <li><a href="aichmayr_qr_cards_8per_sheet.pdf">QR-Karten (8x A4)</a></li>
+     <li><a href="8948117B-57D3-4CB4-BF2A-52292C012184.png">Einzel-QR-Code</a></li>
+   </ul>
 
-    <div class="qr">
-      <p>Scanne den Code, um direkt zur Theorie zu gelangen:</p>
-      <img class="qrcode" src="https://chat.openai.com/sandbox:/mnt/data/aichmayr_framework_qr.png" alt="QR-Code zum Framework">
-    </div>
-  </div>
+   <div class="qr">
+     <p>Scanne den Code, um direkt zur Theorie zu gelangen:</p>
+     <img class="qrcode" src="8948117B-57D3-4CB4-BF2A-52292C012184.png" alt="QR-Code zum Framework">
+   </div>
+
+   <div class="feedback">
+     <h2>Feedback</h2>
+     <p>Was denkst du über das Aichmayr-Framework?</p>
+     <textarea placeholder="Schreibe hier dein Feedback..."></textarea>
+     <br>
+     <button onclick="alert('Danke für dein Feedback! (Dieses Formular speichert noch nichts)')">Absenden</button>
+   </div>
+ </div>
 </body>
 </html>

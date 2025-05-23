@@ -5,32 +5,11 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Aichmayr Framework</title>
  <style>
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: linear-gradient(120deg, #d0e4ff, #f0f9ff);
-    background-size: 400% 400%;
-    animation: bgwave 15s ease infinite;
-    z-index: -1;
-    opacity: 0.6;
-  }
-
-  @keyframes bgwave {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
    body {
      font-family: Arial, sans-serif;
      margin: 2em;
-     background: linear-gradient(135deg, #e8f1ff 0%, #d0e4ff 50%, #e8f1ff 100%);
+     background-color: #f9f9f9;
      color: #222;
-   }
-   h1 {
-     color: #1a1a1a;
    }
    .box {
      background: white;
@@ -40,120 +19,84 @@
      max-width: 800px;
      margin: auto;
    }
+   h1, h2 {
+     text-align: center;
+     color: #333;
+   }
    a {
-     color: #007bff;
+     color: #0057e7;
      text-decoration: none;
    }
    a:hover {
      text-decoration: underline;
    }
-   .qr {
+   .qr, .feedback, .donate {
      text-align: center;
      margin-top: 2em;
    }
-   img.qrcode {
-     width: 200px;
-   }
-   .logo {
-     display: block;
-     margin: 0 auto 2em auto;
-     max-width: 250px;
-   }
-   .feedback {
-     margin-top: 3em;
-     padding-top: 1em;
-     border-top: 1px solid #007bff;
+   img.qrcode, img.logo {
+     max-width: 200px;
    }
    textarea {
      width: 100%;
      height: 100px;
      padding: 10px;
-     margin-top: 5px;
-     border: 1px solid #007bff;
+     border: 1px solid #ccc;
      border-radius: 5px;
      resize: vertical;
    }
    button {
      margin-top: 10px;
      padding: 10px 20px;
-     background-color: #007bff;
+     background-color: #0057e7;
      color: white;
      border: none;
      border-radius: 5px;
      cursor: pointer;
    }
-
-   @keyframes pulse {
-     0% { transform: scale(1); opacity: 1; }
-     50% { transform: scale(1.5); opacity: 0.4; }
-     100% { transform: scale(1); opacity: 1; }
-   }
-
-   .pulse {
-     width: 80px;
-     height: 80px;
-     background-color: #007bff;
-     border-radius: 50%;
-     animation: pulse 2s infinite;
-     margin: 30px auto;
-   }
  </style>
 </head>
 <body>
- <div class="box">
-   <img class="logo" src="52A5F48E-EE67-455D-8B27-03151769A233.png" alt="Aichmayr-Metrik Logo">
-   <h1>Aichmayr Framework</h1>
-   <p>Willkommen auf der offiziellen Seite der Aichmayr-Metrik, des φ(t,r)-Feldes und der UAKi-Weltformel.</p>
+<div class="box">
+ <img class="logo" src="52A5F48E-EE67-455D-8B27-03151769A233.png" alt="Aichmayr-Metrik Logo">
+ <h1>Aichmayr Framework</h1>
+ <p>Willkommen auf der offiziellen Seite der Aichmayr-Metrik, des φ(t,r)-Feldes und der UAKi-Weltformel.</p>
 
-   <div style="text-align:center; margin-bottom: 2em;">
-     <a href="https://hits.sh/marcel110394.github.io/">
-       <img alt="Visitors" src="https://hits.sh/marcel110394.github.io.svg?style=flat-square&label=Visitors&color=blue&labelColor=gray">
-     </a>
-   </div>
+ <h2>Wichtige Veröffentlichungen</h2>
+ <ul>
+   <li><a href="https://doi.org/10.5281/zenodo.15494943">The Aichmayr Framework (2025)</a></li>
+   <li><a href="https://doi.org/10.5281/zenodo.15284064">Structured Spacetime Response (2025)</a></li>
+   <li><a href="https://doi.org/10.5281/zenodo.15393629">Das Ende der Singularität</a></li>
+ </ul>
 
-   <div class="pulse" title="φ(t,r) aktiv"></div>
+ <h2>Downloads</h2>
+ <ul>
+   <li><a href="aichmayr_qr_cards_8per_sheet.pdf">QR-Karten (8x A4)</a></li>
+   <li><a href="8948117B-57D3-4CB4-BF2A-52292C012184.png">Einzel-QR-Code</a></li>
+ </ul>
 
-   <h2>Wichtige Veröffentlichungen</h2>
-   <ul>
-     <li><a href="https://doi.org/10.5281/zenodo.15494943">The Aichmayr Framework (2025)</a></li>
-     <li><a href="https://doi.org/10.5281/zenodo.15284064">Structured Spacetime Response (2025)</a></li>
-     <li><a href="https://doi.org/10.5281/zenodo.15393629">Das Ende der Singularität</a></li>
-     <li><a href="https://doi.org/10.5281/zenodo.15163719">Aichmayr-Metrik: Vereinigung von Gravitation und Quantenmechanik</a></li>
-     <li><a href="https://doi.org/10.5281/zenodo.15487958">π als Resonanzfeld – Vom unendlichen Symbol zu Struktur</a></li>
-   </ul>
-
-   <h2>Downloads</h2>
-   <ul>
-     <li><a href="aichmayr_qr_cards_8per_sheet.pdf">QR-Karten (8x A4)</a></li>
-     <li><a href="8948117B-57D3-4CB4-BF2A-52292C012184.png">Einzel-QR-Code</a></li>
-   </ul>
-
-   <div class="qr">
-     <p>Scanne den Code, um direkt zur Theorie zu gelangen:</p>
-     <img class="qrcode" src="8948117B-57D3-4CB4-BF2A-52292C012184.png" alt="QR-Code zum Framework">
-   </div>
-
-   <div class="feedback">
-     <h2>Feedback</h2>
-     <p>Was denkst du über das Aichmayr-Framework?</p>
-     <form action="https://formspree.io/f/xeogwnnz" method="POST">
-       <textarea name="message" placeholder="Schreibe hier dein Feedback..."></textarea>
-       <br>
-       <button type="submit">Absenden</button>
-     </form>
-   
-   </div>
-
-   <div style="margin-top: 3em; text-align: center;">
-     <h2>Unterstütze das Projekt</h2>
-     <p>Wenn du das Aichmayr Framework unterstützen möchtest, kannst du hier spenden:</p>
-     <form action="https://www.paypal.com/donate" method="post" target="_blank">
-       <input type="hidden" name="hosted_button_id" value="6XQVK572Y9DCC" />
-       <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="Spenden mit PayPal" alt="Spenden">
-       <img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-     </form>
-   </div>
-
+ <div class="qr">
+   <p>Scanne den Code, um direkt zur Theorie zu gelangen:</p>
+   <img class="qrcode" src="8948117B-57D3-4CB4-BF2A-52292C012184.png" alt="QR-Code zum Framework">
  </div>
+
+ <div class="feedback">
+   <h2>Feedback</h2>
+   <p>Was denkst du über das Aichmayr-Framework?</p>
+   <form action="https://formspree.io/f/xeogwnnz" method="POST">
+     <textarea name="message" placeholder="Schreibe hier dein Feedback..."></textarea>
+     <br>
+     <button type="submit">Absenden</button>
+   </form>
+ </div>
+
+ <div class="donate">
+   <h2>Unterstütze das Projekt</h2>
+   <p>Wenn du das Aichmayr Framework unterstützen möchtest:</p>
+   <a href="https://www.paypal.me/MarcelAichmayr" target="_blank">
+     <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="Spenden via PayPal" width="160">
+   </a>
+ </div>
+</div>
 </body>
 </html>

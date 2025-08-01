@@ -23,6 +23,13 @@ This is the official repository for Marcel Aichmayr's public documentation and p
 
 ---
 
+### Document 3
+**Title:** Resolving the Hubble Tension via Phi(t, r): A Functional Spacetime Resonance Approach  
+**SHA1:** bbddf1b86c6720d3c91cd7221911b5f66291359812298dc3168bb9017a4b5353  
+**DOI:** https://doi.org/10.5281/zenodo.15610793  
+**Date:** June 6, 2025
+
+---
 ## About
 
 This project explores novel spacetime dynamics based on the Aichmayr Metric and φ-Core hardware implementations, including GPS drift analysis, resonance detection, pulsar coupling, and real-world sensor feedback.
